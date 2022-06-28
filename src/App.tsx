@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Encrypt } from './components/Encrypt'
-import logo from './logo.svg'
 
 function App() {
   const [count, setCount] = useState(0)
