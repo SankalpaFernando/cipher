@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@500&family=Rubik:wght@300&display=swap');
+h1,h2{
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  width: 50%;
+  margin: 1rem auto;
+  &>div{
+    margin: 2rem auto;
+  }
+  &>.sub-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    &>.options{
+    margin: 2.5rem 1rem;
+    &>.btn-group{
+      display: flex;
+      justify-content: end;
+      margin-top:1rem;
+    }
+
+    }
+  }
+  &>.cipher{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .charMap{
+    background-color: #f7f8f9;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+  }
+}
+@media screen and (max-device-width:1500px){
+  .container{
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .sub-content{
+    grid-template-columns: 1fr !important;
+    width: 80%;
+  }
+}
+@media screen and (max-device-width:760px){
+  .container{
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .sub-content{
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+}
