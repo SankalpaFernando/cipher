@@ -11,7 +11,15 @@ function App() {
         <h1 style={{ textAlign: 'center', fontSize: '3.5rem', color: '#444' }}>
           Caeser Cipher
         </h1>
-        <p style={{ textAlign: 'center',marginTop:"-1rem",marginBottom:"5rem"}}>Made By Sankalpa Fernando</p>
+        <p
+          style={{
+            textAlign: 'center',
+            marginTop: '-1rem',
+            marginBottom: '5rem',
+          }}
+        >
+          Made with ❤️ By Sankalpa Fernando
+        </p>
       </div>
       <Encrypt />
     </div>
