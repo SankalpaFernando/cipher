@@ -32,6 +32,18 @@ h1,h2,p{
     border-radius: .5rem;
   }
 }
+.numbercomponent{
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid rgb(35, 214, 161);
+  border-radius: .6rem;
+  color: #444;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-device-width:1500px){
   .container{
     width: 50%;

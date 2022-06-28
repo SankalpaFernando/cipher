@@ -73,7 +73,7 @@ export const Encrypt: React.FC = () => {
         <Textarea
           minRows={10}
           label="Plaintext"
-          value={plainText.join("")}
+          value={plainText.join('')}
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
             setPlainText(e.target.value.toUpperCase().split(''))
           }
@@ -109,7 +109,14 @@ export const Encrypt: React.FC = () => {
       </div>
 
       <div className="sub-content">
-        <Textarea value={cipherText} label="Ciphertext" minRows={10} />
+        <Textarea
+          value={cipherText}
+          onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+            setCipherText(e.target.value)
+          }
+          label="Ciphertext"
+          minRows={10}
+        />
         <div className="options">
           <RadioGroup
             onChange={(value: 'alpha' | 'alphanum' | 'latin') =>
@@ -130,7 +137,9 @@ export const Encrypt: React.FC = () => {
           </div>
         </div>
         <div>
-          <h2 style={{ textAlign: 'center', color: '#666', margin: '3rem auto' }}>
+          <h2
+            style={{ textAlign: 'center', color: '#666', margin: '3rem auto' }}
+          >
             Brute Force Results
           </h2>
           <div className="charMap">
@@ -143,7 +152,7 @@ export const Encrypt: React.FC = () => {
               </thead>
               <tbody>
                 {guesses.map((text, index) => (
-                  <tr>
+                  <tr className="table-row">
                     <td>{index + 1}</td>
                     <td>{text}</td>
                   </tr>
