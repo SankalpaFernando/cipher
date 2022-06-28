@@ -112,7 +112,7 @@ export const Encrypt: React.FC = () => {
         <Textarea
           value={cipherText}
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-            setCipherText(e.target.value)
+            setCipherText(e.target.value.toUpperCase())
           }
           label="Ciphertext"
           minRows={10}
